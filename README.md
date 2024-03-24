@@ -1,6 +1,6 @@
 # GardnerChessAi with Double Deep Q-Learning
 
-![](rsc/startingPosition.png)
+<img src="rsc/startingPosition.png" width="50%" height="50%">
 
 # Table of Contents
 1. [Game Rules](#Game-Rules)
@@ -48,6 +48,7 @@ Every few epochs, the agent plays against some preprogrammed opponents (random, 
 performance. The results are automatically plotted in a matplotlib graph and saved as a pdf under saves/modelName/gardnerChessAi_training_graph.
 
 Here is the **training graph** of the pretrained model:
+
 ![](rsc/evaluation.png)
 
 In the training evaluation, a temperature of 0.1 was used. The strength of the AI, if it always plays the
@@ -62,6 +63,7 @@ The win percentages of the AI are as follows (draw counts as half a win):
 | Minimax 2 | 52%                     | 64%                   | 87%         |
 | Minimax 3 | 37%                     | 46%                   | 59%         |
 | Minimax 4 | 12%                     | 16%                   | 41%         |
+
 As one can see, the AI is almost as good as minimax with a searching depth of 3, when it always plays the best move (temperature 0) without further search.
 
 When using a minimax search of depth 2 on top of the neural network evaluation, the strength of the AI increases to a
@@ -69,7 +71,8 @@ point which is exactly between minimax with the searching depths 3 and 4.
 
 ### Example Game Against Minimax
 Here is an example game of the pretrained model (white) playing against minimax with a searching depth of 3 (black).
-![](rsc/example_game.gif)
+<img src="rsc/example_game.gif" width="50%" height="50%">
+
 ----
 ## Personal Experience
 
