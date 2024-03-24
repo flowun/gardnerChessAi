@@ -14,9 +14,9 @@
     2. [Problems](#Problems)
     3. [Solutions](#Solutions)
 4. [Installation and Usage](#Installation-and-Usage)
-    1. [How to install?](#How-to-install)
+    1. [How to install](#How-to-install)
     2. [Packages with Versions](#Packages-with-Versions)
-    3. [How to use?](#How-to-use)
+    3. [How to use](#How-to-use)
 
 ----
 ## Game Rules
@@ -117,9 +117,9 @@ used a cpu) and made this project public.
 ----
 ## Installation and Usage
 
-### How to install?
+### How to install
 - clone the repository
-- install the dependencies (if you have conda, you can use the gardnerChessAi.yml file with the terminal command 
+- install the dependencies (if you have conda and want to use a gpu (only possible on wsl2/linux), you can use the gardnerChessAi.yml file with the terminal command 
 `conda env create -f gardnerChessAi.yml` to create a conda environment with all the dependencies)
 
 ### Packages with Versions
@@ -129,7 +129,7 @@ used a cpu) and made this project public.
 - pygame=2.5.2
 - python=3.11.5
 
-### How to use?
+### How to use
 - run training.py to train a model (you can train you own model or continue training the pretrained model)
 - training evaluation can be followed in matplotlib plots under saves/modelName/gardnerChessAi_training_graph
 - run play.py to play against a model or watch two models play against each other
