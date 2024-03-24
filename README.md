@@ -103,7 +103,7 @@ used a cpu) and made this project public.
     - don't have the discount factor unnecessary high
     - patience: if the Q-Values don't explode too much, they often stabilise at some point
 - slow training
-    - **exponential decaying learning rate**
+    - exponential decaying learning rate
     - **gpu** training instead of cpu-only training
     - time different parts of the training process and optimize the most time-consuming parts. For me, this was:
       - directly calling model() instead of model.predict() to get the Q-Values extremely sped up training and
