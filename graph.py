@@ -19,7 +19,7 @@ class Graph:
     def create_graph(self, evaluation_scores=None):
         if evaluation_scores is None:
             evaluation_scores = self.load_evaluation_scores()
-        plt.style.use('seaborn-v0_8-darkgrid')  # if this doesn't work on windows, use 'seaborn-darkgrid'
+        plt.style.use('seaborn-v0_8-darkgrid')
         plt.xlabel("episode (1000 steps per episode)")
         plt.ylabel("score in % (score = wins + 0.5 * draws)")
         plt.title("training evaluation of model '" + self.model_name + "' (temperature = 0.1)", fontsize=13)
