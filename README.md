@@ -121,13 +121,14 @@ used a cpu) and made this project public.
 - clone the repository
 - install the dependencies (if you have conda and want to use a gpu (only possible on wsl2/linux), you can use the gardnerChessAi.yml file with the terminal command 
 `conda env create -f gardnerChessAi.yml` to create a conda environment with all the dependencies)
+- if an error arises during the loading of the pretrained model, it can be resolved by manually downloading and replacing the saves\pretrained\gardnerChessAi_model_main_checkpoint\keras_metadata.pb file. This issue is due to a known Git bug and is beyond my control.
 
 ### Packages with Versions
-- tensorflow=2.15.0.post1
+- python=3.11.5
+- tensorflow=2.15.0
 - numpy=1.26.2
 - matplotlib=3.8.3
 - pygame=2.5.2
-- python=3.11.5
 
 ### How to use
 - run training.py to train a model (you can train you own model or continue training the pretrained model)
